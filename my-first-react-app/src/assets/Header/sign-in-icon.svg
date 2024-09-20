@@ -1,0 +1,29 @@
+<svg
+            id="sign-in-icon"
+            width="29"
+            height="29"
+            viewBox="0 0 29 29"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M18.0084 17.333H10.9906C8.9251 17.4355 7.09517 18.6972 6.26481 20.5912C5.26328 22.5574 7.2621 24.416 9.58673 24.416H19.4123C21.7383 24.416 23.7371 22.5574 22.7342 20.5912C21.9038 18.6972 20.0739 17.4355 18.0084 17.333Z"
+              stroke="black"
+              stroke-opacity="0.8"
+              stroke-width="2.1249"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M18.7496 8.83378C18.7496 11.1809 16.8469 13.0836 14.4998 13.0836C12.1527 13.0836 10.25 11.1809 10.25 8.83378C10.25 6.48668 12.1527 4.58398 14.4998 4.58398C15.6269 4.58398 16.7079 5.03173 17.5049 5.82872C18.3018 6.62571 18.7496 7.70666 18.7496 8.83378Z"
+              stroke="black"
+              stroke-opacity="0.8"
+              stroke-width="2.1249"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>

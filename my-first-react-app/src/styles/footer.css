@@ -1,0 +1,23 @@
+.footer .columns .column0 span {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    white-space: nowrap;
+}
+
+.footer .columns .column0 span img {
+    height: 2em;
+}
+
+.footer .columns .column0 span h1 {
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: black;
+    white-space: nowrap;
+}
+
+.footer .columns {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+}

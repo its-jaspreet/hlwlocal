@@ -1,0 +1,54 @@
+body {
+    font-family: sans-serif;
+    color: rgba(0, 0, 0, 0.8);
+    margin: 0;
+    /* background-color: orange; */
+    display: flex;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.container {
+    position: relative;
+    top: 70px;
+    margin: 0 12%;
+    
+}
+
+.categories-carousel {
+    position: relative;
+    top: 70px;
+}
+
+@media (max-width: 900px) {
+    .container {
+        margin: 0 6%
+    }
+}
+
+@media (max-width: 550px) {
+    .container {
+        padding: 0;
+    }
+}
+
+h2 {
+    font-weight: bolder;
+    font-size: 112%;
+}
+
+h3 {
+    font-size: 108%;
+    font-weight: 600;
+}
+
+hr {
+    margin-bottom: 2%;
+    border: 0.5px solid rgba(0, 0, 0, 0.1);
+    margin-top: -1%;
+}

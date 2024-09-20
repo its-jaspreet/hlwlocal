@@ -1,0 +1,62 @@
+.invisible {
+    display: none;
+}
+
+.faq-cards {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 4%;
+}
+
+.faq-cards h2 {
+    line-height: 148%;
+    font-size: 112%;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+}
+
+.faq-card {
+    text-align: left;
+    border: 1px solid rgba(1,1,1,0.2);
+    border-radius: 16px;
+    margin: 12px 160px 0px;
+    padding: 12px 24px;
+}
+
+.orange {
+    border: 1px solid rgba(215, 139, 48, 1);
+
+}
+
+.faq-card .row1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq-card .row1 h3 {
+    font-size: 88%;
+    letter-spacing: 0.1px;
+}
+
+.faq-card img {
+    cursor: pointer;
+}
+
+.faq-cards > div:nth-child(1) > p {
+    color: rgba(0,0,0,0.6);
+    font-size: 80%;
+    line-height: 160%;
+}
+
+.faq-card p {
+    font-size: 72%;
+    line-height: 160%;
+    letter-spacing: 0.1px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-right: 16%;
+}
+
+.faq-cards #view-more button {
+    margin-top: 12px;
+}

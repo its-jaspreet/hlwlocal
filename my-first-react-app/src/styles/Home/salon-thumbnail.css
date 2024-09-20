@@ -1,0 +1,218 @@
+/* ---- SalonsGridList.jsx---- */
+.salons-grid-list {
+    padding: 1% 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.salons-grid-list .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 44px;
+    
+}
+
+.salons-grid-list .wrapper .thumbnail{
+    width: 100%;
+    padding: 12px 24px 12px 0;
+}
+
+.wrapper.hidden {
+    display: none;
+}
+
+
+#view-more {
+    display: flex;
+    flex-direction: column;
+    margin: 12px;
+    width: 12%;
+    font-size: 70%;
+    row-gap: 8px;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.6);
+    justify-self: center;
+    align-self: center;
+}
+
+#more {
+    font-size: 72%;
+    padding: 16px;
+    width: 80%;
+    background-color: transparent;
+    border-radius: 8px;
+    color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+
+}
+
+#more:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    border: 1px solid white;
+    outline: none;
+    color: white;
+}
+
+
+/* ---- SalonsCarousel.jsx ---- */
+.salons-carousel {
+    padding: 3% 0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.salons-carousel .wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    overflow: scroll;
+    column-gap: 12px;
+}
+
+.wrapper .thumbnail{
+    flex: 1 0 auto;
+    width: calc((100% / 4) - 34px);
+}
+
+#row0 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    column-gap: 8px;
+    height: 24px;
+    margin-right: 12px;
+}
+
+.buttons img {
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 4px;
+    background-color: #f7f7f7;
+}
+
+/* ---- SalonThumbnail.jsx---- */
+
+.thumbnail {
+    margin-top: 4px;
+    padding-right: 24px;
+    padding-top : 12px;
+    margin-bottom: 4px;
+    border-radius: 16px;
+}
+
+#top {
+    position: relative
+}
+
+#gender, #rating {
+    position: absolute;
+}
+
+#gender {
+    top: 12px;
+    left: 6px;
+    color: #ffffff;
+    padding: 3px 5px;
+    width: 44px;
+    border-radius: 5px;
+    font-size: 72%;
+    text-align: center;
+}
+
+.Unisex {
+    background-color: rgba(158, 100, 234, 1);
+}
+
+.Female {
+    background-color: rgba(255, 33, 126, 1);
+}
+
+.Male {
+    background-color: rgba(32, 175, 255, 1);
+}
+
+#rating {
+    right: -7px;
+    bottom: 8px;
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.54);
+    border: 0.6px solid rgba(255, 255, 255, 0.23);
+    box-shadow: rgba(255, 255, 255, 0.23);
+    width: 40px;
+    height: 40px;
+    font-size: 72%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 3px;
+    border-radius: 12px;
+}
+
+#rating p {
+    margin: 0;
+}
+
+#rating img {
+    height: 32%;
+}
+
+#salon {
+    width: 100%;
+    border-radius: 18px;
+    margin: 0 12px;
+    
+}
+
+#text {
+    margin-left: 12px;
+    flex-direction: column;
+}
+
+#text span {
+    display: flex;
+}
+
+#row1 {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#row2, #row3 {
+    overflow: hidden;
+    column-gap: 8px;
+    align-items: flex-start;
+    margin-bottom: 4px;
+}
+
+#row3 {
+    align-items: center;
+}
+
+#row2 p, #row3 p, #distance {
+    font-size: 88%;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.6);
+    margin-top: 1px;
+}
+
+#row2 img, #row3 img {
+    height: 16px;
+    width: auto;
+}
+
+.thumbnail:hover {
+    box-shadow: 0px 0px 6.1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.thumbnail:active {
+    border: 2px solid rgba(201, 201, 201, 1);
+}

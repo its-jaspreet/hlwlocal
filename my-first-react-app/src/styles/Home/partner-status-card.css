@@ -1,0 +1,81 @@
+.statusCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    column-gap: 48px;
+    margin: 24px 0;
+}
+
+.partner-status-card {
+    border-radius: 20px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 24px;
+
+    background: url("../../assets/Home/partnerStatusCard/background-bricks.svg");
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: 100%;   
+}
+
+.partner-status-card div {
+    margin: 8% 24% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.partner-status-card h2 {
+    margin-bottom: 0;
+    line-height: 148%;
+}
+
+.partner-status-card div p {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 70%;
+    line-height: 160%;
+    margin: 8% 8%;
+}
+
+.partner-status-card#lavender {
+    background-color: rgba(245, 235, 255, 1);
+}
+
+.partner-status-card#green {
+    background-color: rgba(237, 255, 198, 1);
+    height: 100%;
+}
+
+.partner-status-card button {
+    cursor: pointer;
+    background-color: rgb(0,0,0,0.9);
+    color: white;
+    text-transform: uppercase;
+    font-size: 72%;
+    padding: 6%;
+    width: 60%;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+}
+
+.partner-status-card button:hover {
+    background-color: rgb(0,0,0,1);
+    box-shadow: 0px 0px 6.1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.partner-status-card#lavender img#vector {
+    width: 44%;
+}
+
+.partner-status-card#green img#vector {
+    width: 40%;
+}
+
+

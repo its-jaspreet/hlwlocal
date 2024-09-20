@@ -1,0 +1,226 @@
+.concern-banner {
+    background: linear-gradient(135deg, #43CBFF 0%, #9708CC 100%);
+    display: grid;
+    /* grid-template-columns: minmax(50%, 2fr) minmax(1fr, 50%); */
+    grid-template-columns: 7fr 1fr;
+    gap: 12%;
+    padding: 3%;
+    margin: 4% 0;
+    border-radius: 20px;
+    /* align-items: center; */
+    margin-bottom: 12%;
+}
+
+
+
+.concern-banner #col1 {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    margin: 0 4%;
+    justify-content: space-between;
+}
+
+.concern-banner #col1 #row1 {
+    margin: 16% 0;
+}
+
+.concern-banner #col1 #row1 #text {
+    margin: 0;
+}
+
+.concern-banner #col1 #row1 #text h1 {
+    font-size: 240%;
+    color: white;
+    margin: 0px;
+}
+
+.concern-banner #col1 #row1 #text p {
+    font-size: 80%;
+    line-height: 160%;
+    letter-spacing: 0.4px;
+    font-weight: normal;
+    text-align: justify;
+}
+
+.concern-banner #row2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.concern-banner #row2 #email, .concern-banner #row2 #call {
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+.concern-banner #row2 #email div, .concern-banner #row2 #call div {
+    margin-right: 2%;
+}
+
+.concern-banner #row2 img {
+    margin: 0;
+    padding: 0;
+    height: 1em;
+    margin-bottom: -4px;
+}
+
+.concern-banner #row2 #heading {
+    color: rgba(255,255,255,0.4);
+    text-transform: uppercase;
+    font-size: 72%;
+    margin-bottom: 4px;
+}
+
+.concern-banner #row2 #info {
+    color: white;
+    font-size: 80%;
+    font-weight: bold;
+    letter-spacing: 0.4px;
+}
+
+.concern-form form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 12px;
+    padding: 12px 0px;
+}
+
+.concern-form form #names {
+    display: flex;
+    
+}
+
+.concern-form form select, .concern-form form input, .concern-form form textarea {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 1px solid white;
+    letter-spacing: 0.4px;
+    font-size: 72%;
+    padding: 8px 6px;
+    margin: 12px 24px;
+    font-family: sans-serif;
+}
+
+.concern-form form #names #fname {
+    margin-right: 12px;
+}
+
+.concern-form form #names #lname {
+    margin-left: 12px;
+}
+
+.concern-form form select {
+    padding: 8px 2px;
+}
+
+.concern-form form select:hover, .concern-form form input:hover, .concern-form form textarea:hover {
+    background-color: rgba(255,255,255,0.1);
+}   
+
+.concern-form form select:focus, .concern-form form input:focus, .concern-form form textarea:focus {
+    background-color: rgba(255,255,255,0.2);
+    outline: none;
+}
+
+.concern-form form select:focus {
+    cursor: pointer;
+}
+
+.concern-form form input::placeholder, .concern-form form textarea::placeholder {
+    color: white;
+}
+
+.concern-form form select option {
+    color: rgba(0,0,0,0.7);
+}
+
+.concern-form form div input[type="checkbox"] {
+    /* appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid pink;
+    width: 16px;
+    height: 16px;
+    border-radius: 3px; */
+    margin: 0;
+    margin-top: 0.8%;
+    font-size: 72%;
+    
+}
+
+.concern-form form div input[type="checkbox"]:hover {
+    cursor: pointer;
+}   
+
+/* .concern-form form div input[type="checkbox"]:checked {
+    background-color: rgba(255, 255, 255, 0.2);
+} */
+
+.concern-form form div label#check-label {
+    color: rgba(255,255,255,0.5);
+    font-size: 80%;
+    letter-spacing: 0.4px;
+    line-height: 144%;
+    cursor: pointer;
+    text-align: justify;
+}
+
+.concern-form form div#checkbox {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 12px;
+    margin: 12px 24px;
+}
+
+.concern-form form button {
+    padding: 12px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    background-color: rgba(255,255,255,0.95);
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #3F422E;
+    font-weight: bold;
+    vertical-align: middle;
+    margin: 12px 24px;
+    font-size: 80%;
+}
+
+.concern-form form button:hover {
+    background-color: rgba(255,255,255,1);
+}
+
+.concern-form form button img {
+    height: 100%;
+    margin-left: 8px;
+}
+
+@media (max-width: 550px) {
+    .concern-banner {
+      grid-template-columns: 1fr 1fr;
+      gap: 6%
+    }
+  }
+
+@media (max-width: 425px) {
+    .concern-banner {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+    }
+
+    .concern-banner #col1 #row1 {
+        margin: 0;
+    }
+
+    .concern-banner {
+        padding: 8% 4%;
+    }
+
+
+  }

@@ -1,0 +1,171 @@
+/* ---- IconButtons.jsx ---- */
+.icon-button {
+    position: relative;
+}
+
+#button {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+}
+
+#num {
+    position: absolute;
+    margin: 20px -4px;
+    padding: 2% 7%;
+    border-radius: 50%;
+    background-color: rgba(222, 17, 53, 1);
+    font-size: 10px;  
+    color: white;
+}
+
+#text {
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0;
+    /* margin-left: 4px; */
+}
+
+#cart #icon {
+    width: 32%;
+    height: auto;
+}
+
+#cart #text {
+    width: fit-content;
+}
+
+#sign-in #icon {
+    width: 20%;
+    height: auto;
+}
+
+#sign-in #num {
+    visibility: hidden;
+}
+
+#sign-in #text {
+    width: fit-content;
+}
+
+/* ---- Location.jsx | Search.jsx ---- */
+.location, .search {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    border-radius: 25px;
+    column-gap: 0;
+    padding: 8px;
+    outline: none;
+    border: 1px solid rgb(0,0,0, 0.1);   
+    box-shadow: 0 0 4px rgb(0,0,0,0.1);
+    column-gap: 4px;
+}
+
+.location {
+    min-width: 120px;
+}
+
+/* .location {
+    width: 8.8em;
+}
+
+.search {
+    width: 20em;
+} */
+
+.location img{
+    width: 14%;
+}
+
+.search img{
+    width: 4%;
+}
+
+
+.location #location {
+    background-color: transparent;
+    width: 100%;
+    border: none;
+    color: rgb(0,0,0,0.7);
+    font-size: 60%;
+    font-weight: bold;
+}
+
+.search input {
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    outline: none;
+    color: rgb(0,0,0,0.7);
+    font-size: 60%;
+}
+
+.location #location:focus, .search input:active {
+    outline: none;
+    border: none;
+}
+
+/* ---- Header.jsx ---- */
+
+.header {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  box-sizing: border-box;
+    padding: 1% 12%; 
+    background-color: white;   
+    
+    z-index: 100;
+}
+
+
+
+.left {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    white-space: nowrap;
+}
+
+.center {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    white-space: nowrap;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    justify-content: space-between;
+}
+
+#brand-logo {
+    height: 2em;
+}
+
+h1 {
+    font-size: 1em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: black;
+    white-space: nowrap;
+}
+
+
+@media (max-width: 900px) {
+    .header {
+        padding: 1% 6%;
+    }
+}
+
+@media (max-width: 550px) {
+    .header {
+        padding: 1% 2%;
+    }
+}
